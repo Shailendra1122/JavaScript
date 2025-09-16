@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      .red-button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .yellow-button {
+        background-color: yellow;
+        color: black;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 16px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <button title="good job!" class="red-button" 
+      onclick="
+        alert('Button clicked');
+        ">
+        hello world
+    </button>
+    <p>paragraph <button class="yellow-button">hello</button>of text</p>
+    <script>
+      alert('hello world');
+      console.log(2+2);
+    </script>
+  </body>
+</html>
