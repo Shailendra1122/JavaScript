@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+   </head>
+  <body>
+    <script>
+        const product = {
+            name: 'socks',
+            price: 10,
+            ['delivery days']: 3,
+
+            rating: {
+                stars: 4.5,
+                count: 99
+            },
+            fun: function function1(){
+                console.log("This is a function inside an object");
+            }
+        };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        product.newProject = true;
+        console.log(product);
+
+        delete product.name;
+        console.log(product);
+
+        console.log(product['delivery days']);
+
+        console.log(product.rating.stars);
+
+        console.log(product.fun());
+
+        product.fun();
+
+    </script>
+  </body>
+</html>
