@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+   </head>
+  <body>
+    <script>
+      const object1 = {
+        message: 'hello'
+      };
+      const object2 = object1;//copy by reference
+
+      const object3= {
+        message: 'Good job!',
+        price: 799
+    };
+
+      console.log(object3 == object1);
+      console.log(object2 == object1);
+    const object4= {
+        message: 'Good job!'
+    };
+    // const message = object4.message;
+    const { message, price} = object4;
+    console.log(message);
+    console.log(price);
+
+    const object5 ={
+        message,
+        // method: function function1(){
+        //     console.log("method");
+        // }
+        method(){
+            console.log('method');
+        }
+    };
+    console.log(object5);
+    object5.method();
+    </script>
+  </body>
+</html>
