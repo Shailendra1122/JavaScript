@@ -2,10 +2,20 @@
 <html>
   <head>
     <title>DOM</title>
-   </head>
+  </head>
   <body>
-    <script>
-
+    <button>Click me</button>
+    <button class="js-button">2nd button</button>
+<script>
+      console.log(document.querySelector('button').innerHTML='changed');//give the insides of the html
+      const buttonElement = document.querySelector('.js-button');//class selector
+      console.log(buttonElement);
+      // document.body.innerHTML='<button>Good job!</button>';
+      // // document.body.innerHTML='hello';
+      // document.title="changed title";
+      // consol.log(document.body);//inside the document bosy is just an object
+      // console.log(typeof document.body);//gets body is object
+      // console.log(document.body.innerHTML);
     </script>
   </body>
 </html>
