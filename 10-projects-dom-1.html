@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Projects</title>
+    <style>
+      body{
+        font-family: Arial;
+      }
+
+      .subscribe-button{
+        border: none;
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .is-subscribed{
+        background-color: gray;
+        color: black;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <p>YouTube Subscribe button</p>
+    <button onclick="Subscribe();" class="js-subscribe-button subscribe-button">Subscribe</button>
+    <p>Click on the button to subscribe to the channel.</p>
+    <script>
+      function Subscribe(){
+        const buttonElement = document.querySelector('.js-subscribe-button');
+          if(buttonElement.innerText === 'Subscribe'){
+            //innerText do the same as innerHTML but it does not give error when there is space 
+            
+            buttonElement.innerText = 'Subscribed';
+
+            buttonElement.classList.add('is-subscribed');
+            }
+          else{
+            buttonElement.innerHTML='Subscribe';
+            buttonElement.classList.remove('is-subscribed');
+          }
+        }
+    </script>
+  </body>
+</html>
